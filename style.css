@@ -2,12 +2,21 @@ html {
     font-family: monospace;
     background-color: #7e5050;
     color: white;
+    margin: 0px;
+    padding: 0px;
 }
 img {
     width: 200px;
+    padding: 0px 37px 0px 37px;
 }
 .description {
     width: 200px;
+    padding: 0px 37px 0px 37px;
+    display: inline-block;
+}
+.preciseinfo {
+    padding: 50px;
+    margin-top: 10px;
 }
 #about {
     background-color: #5c3030;
@@ -19,5 +28,8 @@ img {
     background-color: #552020;
 }
 #description {
-    background-color: #552020;
+    background-color: #552020; 
+}
+#description div{
+    width: 200px;
 }
