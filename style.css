@@ -5,24 +5,50 @@ html {
     margin: 0px;
     padding: 0px;
 }
+header {
+    display: flex;
+}
+.logo {
+    width: 130px;
+}
+nav {
+    padding-top: 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;    
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    padding: 14px 16px;
+}
 img {
-    width: 200px;
     padding: 0px 37px 0px 37px;
 }
-.description {
-    width: 200px;
-    padding: 0px 37px 0px 37px;
-    display: inline-block;
-}
-.preciseinfo {
-    padding: 50px;
-    margin-top: 10px;
+.infofield {
+    border: solid black 3px;
+    border-radius: 15px;
 }
 #about {
     background-color: #5c3030;
+
+    text-align: center;
+    font-size: 22px;
+    padding: 50px 0 50px 0;
+    margin: 40px 0 40px 0;
 }
 #characters {
     background-color: #5c3030;
+}
+.character {
+    width: 300px;
+    padding-top: 30px; 
 }
 #gallery {
     background-color: #552020;
@@ -30,6 +56,14 @@ img {
 #description {
     background-color: #552020; 
 }
-#description div{
-    width: 200px;
+.description {
+    width: 300px;
+    padding: 30px 37px 15px 37px;
+}
+.preciseinfo {
+    display: flex;        
+}
+footer {
+    text-align: center;
+    font-size: 20px;
 }
