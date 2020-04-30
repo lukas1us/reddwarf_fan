@@ -29,25 +29,33 @@ li a {
     color: white;
     font-size: 28px;
     padding: 14px 16px;
+    cursor: pointer;
 }
 img {
     padding: 0px 37px 0px 37px;
 }
-.preciseinfo {  
-    display: flex;        
-}
 .infofield {
-    background-image: url(/img/ship_detail_o.png);
     border: solid black 3px;
     border-radius: 15px;
 }
+.preciseinfo {
+    display: flex;
+}
+#characters {
+    background-image: url(/img/midget_o.png);
+}
 #about {
-    background-color: #5c3030;
-
+    background-image: url(/img/ship_detail_o.png);
     text-align: center;
     font-size: 22px;
     padding: 50px 0 50px 0;
     margin: 40px 0 40px 0;
+}
+#about a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
 }
 .character {
     width: 225px;
@@ -59,7 +67,20 @@ img {
     padding: 30px 37px 15px 37px;
     margin: 10px 37px 30px 37px;
 }
-
+#video {
+    background-image: url(/img/starbug_o.png);
+    background-position: center top;
+    margin: 40px 0 0;
+    text-align: center;
+    font-size: 22px;
+}
+iframe {
+    padding: 60px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 footer {
     text-align: center;
     font-size: 20px;
