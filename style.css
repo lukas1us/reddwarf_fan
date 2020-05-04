@@ -1,3 +1,7 @@
+* {
+    margin: unset;
+    padding: unset;
+}
 html {
     font-family: monospace;
     background: url(/img/background.jpg);
@@ -13,12 +17,22 @@ header {
     top: 0;
     width: 100%;
     display: flex;
+    color: white;
 }
+/* classa se prida pod header kdyz header narazi na top #about */
+.header-scrolled {
+    background-color: #fff;
+    color: #000;
+}
+/**/
 .logo {
     width: 130px;
+    padding: 0px 37px 0px 37px;
+    flex-grow: 0;
 }
 nav {
     padding-top: 50px;
+    flex-grow: 1;
 }
 ul {
     list-style-type: none;
@@ -30,27 +44,23 @@ li {
 }
 li a {
     text-decoration: none;
-    color: white;
     font-size: 28px;
     padding: 14px 16px;
     cursor: pointer;
 }
 #quote {
     width: 550px;
-    padding: 35px 0px 0px 150px;
+    padding: 35px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style: italic;
-    text-align: right;
+    flex-grow: 0;
 }
 main {
-    margin-top: 140px;
-}
-img {
-    padding: 0px 37px 0px 37px;
+    margin: 140px 20px 0;
 }
 .infofield {
-    border: solid black 3px;
+    border: solid #fff 2px;
     border-radius: 15px;
 }
 .preciseinfo {
@@ -73,8 +83,9 @@ img {
     font-weight: bold;
 }
 .character {
-    width: 225px;
-    padding-top: 30px; 
+    width: 300px;
+    padding: 30px 37px 15px 37px;
+    flex-grow: 1;
 }
 .description {
     background-color: #4b4646;
@@ -99,4 +110,9 @@ iframe {
 footer {
     text-align: center;
     font-size: 20px;
+}
+
+/* responsibilita */
+@media (max-width: 1300px) {
+
 }

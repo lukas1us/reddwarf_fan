@@ -8,5 +8,22 @@ var quotes = [
     "„Budeme sebou házet jako kapka potu mezi půlkama cvičitelky aerobiku.“<br> - Lister",
     "„Chovám bláhovou naději, že za tři miliony let, co jsme pryč, lidstvo přestalo válčit, vyléčilo všechny choroby a podařilo se mu zjednodušit formulář daňového přiznání.“ <br> - Holly"
     ];
-var div = document.getElementById('quote');
-div.innerHTML = div.innerHTML += quotes[0];
+var quote = $("#quote");
+quote.append(quotes[Math.floor(Math.random()* quotes.length)]);
+
+//after header element reaches div #about - by scrolling - adds class that changes color and background
+var header = $("header");
+var about = $("#about").offset().top;
+$window = $(window);
+
+$window.scroll(function() {
+    if ($window.scrollTop() >= about) {
+        header.addClass("header-scrolled");
+    }
+    else {
+        header.removeClass("header-scrolled"); 
+    }
+});
+
+
+
