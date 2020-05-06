@@ -14,14 +14,17 @@ quote.append(quotes[Math.floor(Math.random()* quotes.length)]);
 //after header element reaches div #about - by scrolling - adds class that changes color and background
 var header = $("header");
 var about = $("#about").offset().top;
+var hamburger = $(".hamburger");
 $window = $(window);
 
 $window.scroll(function() {
     if ($window.scrollTop() >= about) {
         header.addClass("header-scrolled");
+        hamburger.addClass("hamburger-scrolled");
     }
     else {
-        header.removeClass("header-scrolled"); 
+        header.removeClass("header-scrolled");
+        hamburger.removeClass("hamburger-scrolled");
     }
 });
 
