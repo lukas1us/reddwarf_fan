@@ -12,8 +12,9 @@ html {
     padding: 0px;
 }
 header {
-    overflow: hidden;
+    overflow: visible;
     position: fixed;
+    z-index: 999;
     top: 0;
     width: 100%;
     display: flex;
@@ -21,7 +22,7 @@ header {
 }
 /* classa se prida pod header kdyz header narazi na top #about */
 .header-scrolled {
-    background-color: #fff;
+    background-color: #fff!important;
     color: #000;
 }
 .hamburger-scrolled {
@@ -32,6 +33,10 @@ header {
     width: 130px;
     padding: 0px 37px 0px 37px;
     flex-grow: 0;
+    transition: transform .2s;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 nav {
     padding-top: 50px;
@@ -43,21 +48,30 @@ ul {
     padding: 0px;
 }
 li {
-    display: inline;    
+    display: inline; 
+     
 }
 li a {
     text-decoration: none;
     font-size: 28px;
     padding: 14px 16px;
     cursor: pointer;
+    transition: color .4s ease; 
+}
+li a:hover {
+    color: #f21;
 }
 #quote {
     width: 550px;
-    padding: 35px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style: italic;
     flex-grow: 0;
+    white-space: pre-line;
+}
+#second-nav {
+    display: none;
 }
 main {
     margin: 140px 20px 0;
@@ -85,6 +99,13 @@ main {
     background-image: url(/img/ship_detail_o.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+.character {
+    transition: transform .2s;
+}
+.character:hover {
+    overflow: hidden;
+    transform: scale(1.1);
 }
 @media (min-width: 1400px) {
     .preciseinfo {
@@ -175,17 +196,24 @@ footer {
     }
     .responsive-menu {
         flex-grow: 1;
-
+        display: flex;
+    }
+    #second-nav .link {
+        text-decoration: none;
+        margin: 30px 10px 0 0;
+        font-size: 21px;
+    }
+    #hamburger-dad {
+        flex-grow: 1;
+        
     }
     .hamburger {
         width: 35px;
         height: 5px;
         background-color: #fff;
         margin: 6px 0;
-        margin-left:auto; 
-        margin-right: 6px;
     }
-    .hamburger:hover {
-        opacity: 0.7; 
+    #hamburger-dad:hover {
+        opacity: 0.7;
     }
 }
