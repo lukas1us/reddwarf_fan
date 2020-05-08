@@ -12,7 +12,7 @@ var quote = $("#quote");
 quote.append(quotes[Math.floor(Math.random()* quotes.length)]);
 
 $(function () {
-    let count = 0;
+    var count = 0;
     setInterval(function ()  {
         count++;
         quote.fadeOut(400, function () {
@@ -29,10 +29,9 @@ $(function () {
 var header = $("header");
 var about = $("#about").offset().top;
 var hamburger = $(".hamburger");
-$window = $(window);
 
-//$window.scroll(function() {
-//    if ($window.scrollTop() >= about) {
+//$(window).scroll(function() {
+//    if ($(window).scrollTop() >= about) {
 //        header.addClass("header-scrolled");
 //        hamburger.addClass("hamburger-scrolled");
 //    }
@@ -68,3 +67,14 @@ function showMenu() {
         secondNav.css("display", "unset");
     }
 }
+
+//smooth scroll after click on anchor in nav
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} ,600, "linear" );
+});

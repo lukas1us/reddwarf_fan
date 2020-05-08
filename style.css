@@ -29,13 +29,13 @@ header {
     background-color: #000!important;
 }
 /**/
-.logo {
+#logo {
     width: 130px;
     padding: 0px 37px 0px 37px;
     flex-grow: 0;
     transition: transform .2s;
 }
-.logo:hover {
+#logo:hover {
     transform: scale(1.1);
 }
 nav {
@@ -100,13 +100,7 @@ main {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.character {
-    transition: transform .2s;
-}
-.character:hover {
-    overflow: hidden;
-    transform: scale(1.1);
-}
+
 @media (min-width: 1400px) {
     .preciseinfo {
         display: flex;
@@ -115,6 +109,11 @@ main {
         width: 10%;
         padding: 30px 37px 15px 37px;
         flex-grow: 1;
+        transition: transform .2s ease-in-out;
+    }
+    .character:hover {
+    overflow: hidden;
+    transform: scale(1.1);
     }
     .description {
         background-color: #4b4646;
