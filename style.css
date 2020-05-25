@@ -2,15 +2,17 @@
     margin: unset;
     padding: unset;
 }
+
 html {
     font-family: monospace;
     background: url(/img/background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    color: white;
+    color: #fff;
     margin: 0px;
     padding: 0px;
 }
+
 header {
     overflow: visible;
     position: fixed;
@@ -18,16 +20,30 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    color: white;
 }
+
+header a {
+    color: #fff;
+}
+
 /* classa se prida pod header kdyz header narazi na top #about */
 .header-scrolled {
-    background-color: #fff!important;
+    background-color: #fff !important;
     color: #000;
 }
-.hamburger-scrolled {
-    background-color: #000!important;
+
+.header-scrolled a {
+    color: #000 !important;
 }
+
+.header-scrolled a:hover {
+    color: #f21 !important;
+}
+
+.hamburger-scrolled {
+    background-color: #000 !important;
+}
+
 /**/
 #logo {
     width: 130px;
@@ -35,32 +51,39 @@ header {
     flex-grow: 0;
     transition: transform .2s;
 }
+
 #logo:hover {
     transform: scale(1.1);
 }
+
 nav {
     padding-top: 50px;
     flex-grow: 1;
 }
+
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
+
 li {
-    display: inline; 
-     
+    display: inline;
+
 }
+
 li a {
     text-decoration: none;
     font-size: 28px;
     padding: 14px 16px;
     cursor: pointer;
-    transition: color .4s ease; 
+    transition: color .4s ease;
 }
+
 li a:hover {
     color: #f21;
 }
+
 #quote {
     width: 550px;
     padding: 25px 0px 0px 0px;
@@ -70,16 +93,20 @@ li a:hover {
     flex-grow: 0;
     white-space: pre-line;
 }
+
 #second-nav {
     display: none;
 }
+
 main {
     margin: 140px 20px 0;
 }
+
 .infofield {
     border: solid #fff 2px;
     border-radius: 15px;
 }
+
 #about {
     background-image: url(/img/midget_o.png);
     background-size: 100% 100%;
@@ -89,12 +116,14 @@ main {
     padding: 50px 0 50px 0;
     margin: 40px 0 40px 0;
 }
+
 #about a {
     text-decoration: none;
     color: lightblue;
     cursor: pointer;
     font-weight: bold;
 }
+
 #characters {
     background-image: url(/img/ship_detail_o.png);
     background-size: 100% 100%;
@@ -105,16 +134,19 @@ main {
     .preciseinfo {
         display: flex;
     }
+
     .character {
         width: 10%;
         padding: 30px 37px 15px 37px;
         flex-grow: 1;
         transition: transform .2s ease-in-out;
     }
+
     .character:hover {
-    overflow: hidden;
-    transform: scale(1.1);
+        overflow: hidden;
+        transform: scale(1.1);
     }
+
     .description {
         background-color: #4b4646;
         width: 20%;
@@ -122,6 +154,7 @@ main {
         margin: 0px 37px 30px 37px;
     }
 }
+
 #video {
     background-image: url(/img/starbug_o.png);
     background-repeat: no-repeat;
@@ -131,6 +164,7 @@ main {
     text-align: center;
     font-size: 22px;
 }
+
 iframe {
     padding: 60px 0;
     display: block;
@@ -138,6 +172,7 @@ iframe {
     margin-right: auto;
     width: 50%;
 }
+
 footer {
     text-align: center;
     font-size: 20px;
@@ -148,11 +183,13 @@ footer {
     .preciseinfo {
         display: flex;
     }
+
     .character {
         width: 10%;
         padding: 30px 37px 15px 37px;
         flex-grow: 1;
     }
+
     .description {
         background-color: #4b4646;
         width: 20%;
@@ -166,14 +203,17 @@ footer {
     #characters {
         display: flex;
     }
+
     .preciseinfo {
         display: flex;
         flex-direction: column;
     }
+
     .character {
         width: 60%;
         padding: 10% 0 5% 40%;
     }
+
     .description {
         background-color: #4b4646;
         width: 20%;
@@ -182,6 +222,7 @@ footer {
         margin: 20% 20% 30%;
     }
 }
+
 @media (max-width: 1300px) {
     header {
         overflow: hidden;
@@ -190,28 +231,34 @@ footer {
         width: 100%;
         color: white;
     }
+
     nav {
         display: none;
     }
+
     .responsive-menu {
         flex-grow: 1;
         display: flex;
     }
+
     #second-nav .link {
         text-decoration: none;
         margin: 30px 10px 0 0;
         font-size: 21px;
     }
+
     #hamburger-dad {
         flex-grow: 1;
-        
+
     }
+
     .hamburger {
         width: 35px;
         height: 5px;
         background-color: #fff;
         margin: 6px 0;
     }
+
     #hamburger-dad:hover {
         opacity: 0.7;
     }

@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Red Dwarf - info</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="">
-        <img id="logo" src="/img/RedDwarfSeriesIII.png" alt="RedDwarfLogo">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#video">Video</a></li>
-            </ul>
-        </nav>
-        <div id="quote">
-            
+      <img id="logo" src="/img/RedDwarfSeriesIII.png" alt="RedDwarfLogo" />
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#video">Video</a></li>
+        </ul>
+      </nav>
+      <div id="quote"></div>
+      <div class="responsive-menu">
+        <div id="second-nav">
+          <a class="link" href="#">About</a>
+          <a class="link" href="#characters">Characters</a>
+          <a class="link" href="#video">Video</a>
         </div>
-        <div class="responsive-menu">
-            <div id="second-nav">
-                <a class="link" href="#">About</a>
-                <a class="link" href="#characters">Characters</a>
-                <a class="link" href="#video">Video</a>
-            </div>
-            <div id="hamburger-dad">
-                <a href="javascript:void(0);" onclick="showMenu()">
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                </a>
-            </div>
+        <div id="hamburger-dad">
+          <a href="javascript:void(0);" onclick="showMenu()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+          </a>
         </div>
+      </div>
     </header>
     <main>
-        <div class="infofield" id="about">
-            Seriál vypráví o osudech Davea Listera, technika vesmírné těžařské lodi Červený trpaslík, který jako jediný z celé posádky přežil výbuch tepelného štítu plavidla díky tomu,
-            že byl za trest umístěn v časové stázi, zatímco radiace všechny ostatní zabila. Po jejím snížení na dostatečně nízkou úroveň, které trvalo tři miliony let, je ze stáze probuzen lodním počítačem Hollym. 
-            Společnost mu ve formě hologramu, který Holly vytvořil, dělá jeho nadřízený, technik Arnold Rimmer, a také Kocour, příslušník humanoidního druhu, jenž se v útrobách lodi vyvinul z kočky domácí. 
-            Později se členem posádky stane i android Kryton a Listerova bývalá přítelkyně a důstojnice Kristina Kochanská. <br><br> 
-            Červený trpaslík je kosmická loď z 23. století patřící Jupiterské důlní společnosti. Je dlouhá 6 mil (cca 10 km), vysoká 4 míle (cca 6,5 km) a široká 3 míle (cca 5 km), má tvar šestibokého hranolu a je natřená načerveno.
-             Je poháněna vodíkem, který je získáván z vesmírných zdrojů a může tak teoreticky plout vesmírem do nekonečna. Uvnitř se nachází více než 2 000 podlaží. Loď představuje sama o sobě malé město, jsou zde nemocnice, bary, diskotéky, celnice i vězení.
-             Při poslední misi byla její posádka tvořena více než 1 000 lidmi a 1 hologramem napájeným z centrální jednotky lodi. Loď je také vybavena menšími výsadkovými plavidly. Tato plavidla jsou buď typu Kosmik, anebo typu Modrý skrček, přičemž obou typů těchto plavidel jsou na lodi desítky. - zdroj <a href="https://cs.wikipedia.org/wiki/%C4%8Cerven%C3%BD_trpasl%C3%ADk_(seri%C3%A1l)">Wikipedia</a>
-        </div>
-        <div class="infofield" id="characters">
-            <section class="preciseinfo" >
-                <img class="character" src="/img/lister.jpg" alt="Dave">
-                <img class="character" src="/img/rimmer.jpg" alt="Rimmer">
-                <img class="character" src="/img/holly.jpg" alt="Holly">
-                <img class="character" src="/img/cat.jpg" alt="Cat">
-                <img class="character" src="/img/kryten.jpg" alt="Kryten">
-            </section>
-            <article class="preciseinfo" >
-                <div class="description">Lister je pojídač kari a po Hendrixovi nejtalentovanější kytarista</div>
-                <div class="description">Rimmer je cílevědomý a ctižádostivý - víš jen víš tam on míři...</div>
-                <div class="description">Holly je palubní počítač celé lodi s IQ 6000 to má například 6000 hlídačů na parkovišti</div>
-                <div class="description">Kocour felis sapiens, tvor který se nalodi vyvinul z kočky domací má polovinu její inteligence</div>
-                <div class="description">Kryton je android sestrojený k uklizení a obecně pomoci lidem, má dokonce titul z toaletních věd</div>
-            </article>
-        </div>
-        <div class="infofield" id="video">
-            <p>Zde je odkaz na seznam videí tz. Smeg Ups. (v angličtině)</p>
-              <iframe width="600" height="400" src="https://www.youtube.com/embed/videoseries?list=PLHA6QNdGnGRde7ayVO4270dm5_G2KAAND" frameborder="0"></iframe>
-        </div>
+      <div class="infofield" id="about">
+        Seriál vypráví o osudech Davea Listera, technika vesmírné těžařské lodi
+        Červený trpaslík, který jako jediný z celé posádky přežil výbuch
+        tepelného štítu plavidla díky tomu, že byl za trest umístěn v časové
+        stázi, zatímco radiace všechny ostatní zabila. Po jejím snížení na
+        dostatečně nízkou úroveň, které trvalo tři miliony let, je ze stáze
+        probuzen lodním počítačem Hollym. Společnost mu ve formě hologramu,
+        který Holly vytvořil, dělá jeho nadřízený, technik Arnold Rimmer, a také
+        Kocour, příslušník humanoidního druhu, jenž se v útrobách lodi vyvinul z
+        kočky domácí. Později se členem posádky stane i android Kryton a
+        Listerova bývalá přítelkyně a důstojnice Kristina Kochanská.
+        <br /><br />
+        Červený trpaslík je kosmická loď z 23. století patřící Jupiterské důlní
+        společnosti. Je dlouhá 6 mil (cca 10 km), vysoká 4 míle (cca 6,5 km) a
+        široká 3 míle (cca 5 km), má tvar šestibokého hranolu a je natřená
+        načerveno. Je poháněna vodíkem, který je získáván z vesmírných zdrojů a
+        může tak teoreticky plout vesmírem do nekonečna. Uvnitř se nachází více
+        než 2 000 podlaží. Loď představuje sama o sobě malé město, jsou zde
+        nemocnice, bary, diskotéky, celnice i vězení. Při poslední misi byla
+        její posádka tvořena více než 1 000 lidmi a 1 hologramem napájeným z
+        centrální jednotky lodi. Loď je také vybavena menšími výsadkovými
+        plavidly. Tato plavidla jsou buď typu Kosmik, anebo typu Modrý skrček,
+        přičemž obou typů těchto plavidel jsou na lodi desítky. - zdroj
+        <a
+          href="https://cs.wikipedia.org/wiki/%C4%8Cerven%C3%BD_trpasl%C3%ADk_(seri%C3%A1l)"
+          >Wikipedia</a
+        >
+      </div>
+      <div class="infofield" id="characters">
+        <section class="preciseinfo">
+          <img class="character" src="/img/lister.jpg" alt="Dave" />
+          <img class="character" src="/img/rimmer.jpg" alt="Rimmer" />
+          <img class="character" src="/img/holly.jpg" alt="Holly" />
+          <img class="character" src="/img/cat.jpg" alt="Cat" />
+          <img class="character" src="/img/kryten.jpg" alt="Kryten" />
+        </section>
+        <article class="preciseinfo">
+          <div class="description">
+            Lister je poslední žijící člověk, ve svém čase "hraje" na kytaru a
+            pojídá kari
+          </div>
+          <div class="description">
+            Rimmer je nadřízený Listera, protože je pro Listera častým terčem
+            posměšků a žertů, tak je Hollym zprovozněn jako hologram, aby se
+            Lister nezbláznil
+          </div>
+          <div class="description">
+            Holly je palubní počítač celé lodi s IQ 6000, tedy stejnou
+            inteligencí co má například 6000 učitelů tělocviku
+          </div>
+          <div class="description">
+            Kocour je tvor, který se v bezpečném prostředí mimo dosah radiace po
+            3M let vyvinul z kočky domácí - má polovinu její inteligence
+          </div>
+          <div class="description">
+            Kryton je android sestrojený k uklizení a obecně pomoci lidem, má
+            dokonce titul z toaletních věd!
+          </div>
+        </article>
+      </div>
+      <div class="infofield" id="video">
+        <p>Zde je odkaz na seznam videí tz. Smeg Ups. (v angličtině)</p>
+        <iframe
+          width="600"
+          height="400"
+          src="https://www.youtube.com/embed/videoseries?list=PLHA6QNdGnGRde7ayVO4270dm5_G2KAAND"
+          frameborder="0"
+        ></iframe>
+      </div>
     </main>
     <footer>
-        Created by &copy;lukas1us 2020
+      Created by &copy;lukas1us 2020
     </footer>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
